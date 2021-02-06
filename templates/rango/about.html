@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 	<head>
 		<title>Rango</title>
@@ -6,14 +7,15 @@
 	<body>
 		<h1>Rango says...</h1>
 		<div>
-		here is the about page <br />
-		<strong>This tutorial has been put together by Khena </strong><br />
+			here is the about page <br />
+			<strong>This tutorial has been put together by Khena </strong><br />
 		</div>
+		
 		<div>
-			<a href="/rango/index/">Back</a><br />
-			<img src="{% static 'images/test.jpeg' %}"
+		<a href="/rango/index/">Back</a><br />
+		<img src="{% static 'images/test.jpeg' %}"
 			alt="Picture of Lemons" /> 
-			<img src="{% static 'media/cat.jpg' %}" alt="Picture of a cat"/>
+		<img src="{% static 'media/cat.jpg' %}" alt="Picture of a cat"/>
 		</div>
 	</body>
 </html>
