@@ -40,7 +40,7 @@ def populate():
 
     for c in Category.objects.all():
         for p in Page.objects.filter(category=c):
-            print(f '- {c}: {p}')
+            print(f'- {c}: {p}')
 
 def add_page(cat,title, url, views=0):
 
